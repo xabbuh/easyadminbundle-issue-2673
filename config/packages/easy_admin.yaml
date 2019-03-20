@@ -1,0 +1,7 @@
+easy_admin:
+    entities:
+        User:
+            class: App\Entity\User
+            form:
+                # Both fields are always required - no matter if I put 'Default', or 'foo', or 'bar' in here:
+                form_options: { validation_groups: ['Default'] }
