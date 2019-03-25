@@ -19,14 +19,14 @@ class User
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @  Assert\NotBlank(groups={"foo"}, message="Error Message from `foo` validation group")
-     * @  Assert\Length(min="5", groups={"foo"}, minMessage="Error Message from `foo` validation group")
+     * @Assert\NotBlank(groups={"foo"}, message="Error Message from `foo` validation group")
+     * @Assert\Length(min="5", groups={"foo"}, minMessage="Error Message from `foo` validation group")
      */
     private $firstName;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @  Assert\NotBlank(groups={"bar"})
+     * @Assert\NotBlank(groups={"bar"})
      */
     private $lastName;
 
